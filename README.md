@@ -70,6 +70,6 @@ end
 
 function:
 
-    div  a, 2
+   div  a, 2
 
-    ret
+   ret
