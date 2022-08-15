@@ -48,18 +48,28 @@ end - this instruction indicates that the program ends correctly, so the stored 
 
 
 The following is an exmaple of accepted input
+
 let program = "\n; My first program\nmov  a, 5\ninc  a\ncall function\nmsg  '(5+1)/2 = ', a    ; output message\nend\n\nfunction:\n    div  a, 2\n    ret\n";
+
 AssemblerInterpreter::interpret(program);
 
 // Which is equivalent to (keep in mind that empty lines are not displayed in the console on CW, so you actually won't see the separation before "function:"...):
 
 ; My first program
+
 mov  a, 5
+
 inc  a
+
 call function
+
 msg  '(5+1)/2 = ', a    ; output message
+
 end
 
+
 function:
+
     div  a, 2
+
     ret
